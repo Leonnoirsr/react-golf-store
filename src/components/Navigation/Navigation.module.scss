@@ -1,13 +1,24 @@
 .Navigation {
+  width: 100%;
+  position: relative;
+
   .Navigation__Mid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .Icon {
-      font-size: 25px;
-      background-color: whitesmoke;
-      padding: 0.2rem;
-      border-radius: 50%;
+    .Basket {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 0.8rem;
+        color: #ccc;
+      }
+      .Icon {
+        color: #ccc;
+        margin-right: 5px;
+        font-size: 19px;
+        padding: 0.2rem;
+      }
     }
   }
 }

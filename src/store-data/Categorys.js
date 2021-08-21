@@ -6,7 +6,7 @@ const CATEGORYS = [
       {
         label: "Drivers",
         imageUrl:
-          "https://images.directgolf.co.uk/images/products/87221490_3plat_a1.jpg",
+          "https://images.squarespace-cdn.com/content/v1/530e7c46e4b0f7e807d6f041/1587567338869-M9GE4FJU4IO7Q8029QGD/drivers-2020-mavrik-std____1.png?format=750w",
       },
       {
         label: "Fairway Woods",
