@@ -1,0 +1,13 @@
+.Navigation {
+  .Navigation__Mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Icon {
+      font-size: 25px;
+      background-color: whitesmoke;
+      padding: 0.2rem;
+      border-radius: 50%;
+    }
+  }
+}
