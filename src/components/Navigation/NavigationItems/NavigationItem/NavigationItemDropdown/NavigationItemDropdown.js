@@ -7,6 +7,7 @@ const NavigationItemDropdown = (props) => {
     <ul className={`${classes.NavigationItemDropdown} ${props.className}`}>
       {props.subCategorys.map((subCategory) => (
         <NavigationItemDropdownItem
+          key={subCategory.label}
           category={props.category}
           subCategory={subCategory}
         />

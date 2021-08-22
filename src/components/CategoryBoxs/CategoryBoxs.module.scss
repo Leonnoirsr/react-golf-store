@@ -1,0 +1,10 @@
+.CategoryBoxs {
+  display: grid;
+  margin: 0 auto;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 50%);
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

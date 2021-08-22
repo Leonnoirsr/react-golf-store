@@ -8,7 +8,7 @@ const NavigationItems = (props) => {
   return (
     <ul className={classes.NavigationItems}>
       {Categorys.map((category) => (
-        <NavigationItem category={category} />
+        <NavigationItem key={category.category} category={category} />
       ))}
     </ul>
   );

@@ -1,0 +1,31 @@
+.Footer {
+  background: whitesmoke;
+  border-top: 1px solid #ccc;
+  padding: 0.5rem;
+  height: 400px;
+  .NewsLetter {
+    text-align: center;
+    form {
+      width: fit-content;
+      display: flex;
+      margin: 10px auto;
+      justify-items: center;
+      border: 1px solid #ccc;
+      input {
+        border: none;
+        font-family: inherit;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        max-width: 300px;
+        outline: none;
+      }
+      button {
+        padding: 0.5rem;
+        font-family: inherit;
+        display: block;
+        width: 100px;
+        border: none;
+      }
+    }
+  }
+}

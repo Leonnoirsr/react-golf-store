@@ -12,7 +12,7 @@ const TopBar = (props) => {
     <div className={classes.TopBar}>
       <ul>
         {options.map((option) => (
-          <li>
+          <li key={option.label}>
             <FontAwesomeIcon className={classes.Icon} icon={option.icon} />
             {option.label}
           </li>
