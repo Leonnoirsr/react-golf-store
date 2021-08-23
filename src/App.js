@@ -11,11 +11,12 @@ function App() {
     <Fragment>
       <Navigation />
       <BannerBar>Free UK Delivery on Orders over £30</BannerBar>
+
       <PageContainer>
+        <Homepage />
         <Products />
       </PageContainer>
 
-      <Homepage />
       <Footer />
     </Fragment>
   );

@@ -1,14 +1,17 @@
 import React from "react";
-import PageContainer from "../../global/PageContainer/PageContainer";
+import classes from "./Product.module.scss";
 import ProductActions from "./ProductActions/ProductActions";
 import ProductData from "./ProductData/ProductData";
 import ProductImage from "./ProductImage/ProductImage";
-import products from "../../../store-data/Products";
 const Product = ({ product }) => {
   return (
-    <div className="product">
-      <ProductImage />
-      <ProductData />
+    <div className={classes.Product}>
+      <ProductImage imageUrl={product.imageUrl} />
+      <ProductData
+        title={product.title}
+        price={product.price}
+        description={product.description}
+      />
       <ProductActions />
     </div>
   );

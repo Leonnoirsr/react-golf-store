@@ -1,10 +1,6 @@
-import React from 'react';
-import product from "../../../../store-data/Products"
-const ProductActions = ({product}) => {
-  return (
-    <div>
-      <button>Add to Cart</button>
-    </div>
-  )
-}
+import React from "react";
+import classes from "./ProductActions.module.scss";
+const ProductActions = (props) => {
+  return <button className={classes.AddToCartButton}>Add to Cart</button>;
+};
 export default ProductActions;

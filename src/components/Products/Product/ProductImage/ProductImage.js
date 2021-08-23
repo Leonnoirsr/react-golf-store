@@ -1,7 +1,8 @@
 import React from "react";
 
-const ProductImage = ({ product }) => {
-  return <div></div>;
+const ProductImage = ({ imageUrl }) => {
+  console.log(imageUrl);
+  return <img src={imageUrl}></img>;
 };
 
 export default ProductImage;
