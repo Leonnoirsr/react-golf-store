@@ -1,0 +1,15 @@
+.ToggleButton {
+  width: 28px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  .Bar {
+    background: black;
+    height: 3.2px;
+    width: 100%;
+  }
+  @media (max-width: 1250px) {
+    display: flex;
+  }
+}

@@ -1,0 +1,18 @@
+.MobileNavigationItems {
+  position: fixed;
+  top: 0;
+  width: 70vw;
+  z-index: 100;
+  height: 100vh;
+  padding: 0.3rem 0;
+  background: white;
+  overflow: auto;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+  @media (min-width: 1250px) {
+    display: none;
+  }
+  .ToggleButton {
+    margin-left: calc(100% - 40px);
+    right: 5px;
+  }
+}
