@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./NavigationItemDropdownItem.module.scss";
 import { Link } from "react-router-dom";
 const NavigationItemDropdownItem = ({ category, subCategory }) => {
-  console.log(category);
   return (
     <Link
       to={`/shop/${category.toLowerCase()}/${subCategory.label

@@ -2,4 +2,7 @@
   display: flex;
   list-style: none;
   text-transform: uppercase;
+  @media (max-width: 1250px) {
+    display: none;
+  }
 }
