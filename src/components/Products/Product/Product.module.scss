@@ -1,6 +1,21 @@
 .Product {
-  width: fit-content;
-  border: 1px solid black;
-  margin: 5px;
-  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 2px 2px #ccc;
+  overflow: hidden;
+}
+
+.Sale__Item {
+  position: absolute;
+  background: orange;
+  top: 13px;
+  right: -25px;
+  color: white;
+  box-shadow: 0px 1px 3px 1px black;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+  transform: rotate(45deg);
 }

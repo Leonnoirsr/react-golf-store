@@ -5,7 +5,7 @@ const CategoryBox = (props) => {
   console.log(props);
   return (
     <div className={classes.CategoryBox}>
-      <img src={props.category.imageUrl} />
+      <img src={props.category.imageUrl} alt={props.category.label} />
       <h3>{props.category.label}</h3>
     </div>
   );

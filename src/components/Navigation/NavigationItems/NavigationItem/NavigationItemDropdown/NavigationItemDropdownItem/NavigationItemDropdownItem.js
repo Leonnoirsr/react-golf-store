@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavigationItemDropdownItem = ({ category, subCategory }) => {
   return (
     <Link
-      to={`/shop/${category.toLowerCase()}/${subCategory.label
+      to={`/store/${category.toLowerCase()}/${subCategory.label
         .replaceAll(" ", "-")
         .toLowerCase()}`}
     >

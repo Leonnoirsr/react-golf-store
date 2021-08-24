@@ -13,6 +13,7 @@ const Product = ({ product }) => {
         description={product.description}
       />
       <ProductActions />
+      {product.saleItem && <p className={classes.Sale__Item}>Sale!</p>}
     </div>
   );
 };

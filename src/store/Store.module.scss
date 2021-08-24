@@ -1,0 +1,36 @@
+.Store__Container {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Filters {
+  width: 100%;
+  max-width: 1092px;
+  display: flex;
+  background: whitesmoke;
+  .Filter__List {
+    padding: 1rem;
+    width: fit-content;
+    background: white;
+    max-height: 170px;
+    border: 1px solid #ccc;
+    overflow: auto;
+
+    h4 {
+    }
+    .Checkbox {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      label {
+        margin-left: 5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

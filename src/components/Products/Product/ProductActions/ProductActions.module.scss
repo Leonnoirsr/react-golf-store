@@ -1,6 +1,21 @@
-.AddToCartButton {
-  font-family: inherit;
+.Actions {
   padding: 0.3rem;
-  width: 100%;
-  border: none;
+  display: flex;
+  justify-content: center;
+  button {
+    margin: 0 5px;
+    padding: 0.3rem;
+    box-shadow: 0px 2px 2px 1px #ccc;
+    font-family: inherit;
+    border: none;
+  }
+}
+
+.AddToCartButton {
+  background: orange;
+  color: white;
+}
+
+.DetailButton {
+  background: none;
 }

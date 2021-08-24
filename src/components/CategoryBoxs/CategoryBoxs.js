@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./CategoryBoxs.module.scss";
-import CATEGORYS from "../../store-data/Categorys";
 import CategoryBox from "./CategoryBox/CategoryBox";
 
 const CategoryBoxs = (props) => {

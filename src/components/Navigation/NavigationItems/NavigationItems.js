@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "../Navigation";
 import classes from "./NavigationItems.module.scss";
 import Categorys from "../../../store-data/Categorys";
 import NavigationItem from "./NavigationItem/NavigationItem";

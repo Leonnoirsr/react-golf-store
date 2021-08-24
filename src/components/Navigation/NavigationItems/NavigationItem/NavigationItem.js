@@ -1,8 +1,6 @@
 import React from "react";
-import Navigation from "../../Navigation";
 import classes from "./NavigationItem.module.scss";
 import NavigationItemDropdown from "./NavigationItemDropdown/NavigationItemDropdown";
-import NavigationItemDropdownItem from "./NavigationItemDropdown/NavigationItemDropdownItem/NavigationItemDropdownItem";
 
 const NavigationItem = ({ category }) => {
   return (

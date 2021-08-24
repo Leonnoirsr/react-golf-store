@@ -25,7 +25,7 @@ const ImageBanner = (props) => {
   timer = setInterval(CarouselImages, 2000);
   return (
     <div className={classes.ImageBanner}>
-      <img src={Images[imageIndex]}></img>
+      <img src={Images[imageIndex]} alt="slideshow"></img>
     </div>
   );
 };

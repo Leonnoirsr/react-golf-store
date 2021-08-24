@@ -1,0 +1,36 @@
+.No__Products {
+  margin: 10px 0;
+  padding: 1rem;
+  color: white;
+  background: red;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  @media (max-width: 803px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  @media (max-width: 550px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+.Products {
+  gap: 20px;
+  width: fit-content;
+  display: grid;
+  padding: 2rem 1rem;
+  grid-template-columns: repeat(4, 250px);
+  @media (max-width: 1250px) {
+    grid-template-columns: repeat(3, 250px);
+  }
+  @media (max-width: 803px) {
+    grid-template-columns: repeat(2, 48%);
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
