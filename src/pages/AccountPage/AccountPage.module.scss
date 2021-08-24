@@ -1,0 +1,107 @@
+.Page__Header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.AccountPage {
+  max-width: 900px;
+  padding: 2.33rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Forms {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+  .Login__Form {
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    margin: 15px;
+    background: whitesmoke;
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    @media (max-width: 800px) {
+      min-width: 90%;
+      margin: 20px auto;
+    }
+    .Form__Group {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      input {
+        font-family: inherit;
+        border: 1px solid #ccc;
+        outline: none;
+
+        padding: 0.5rem;
+      }
+      label {
+        font-size: 0.6rem;
+      }
+    }
+  }
+  button {
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+    font-weight: bolder;
+    border: none;
+    padding: 0.7rem;
+  }
+}
+.Checkbox__Container {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .Checkbox {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    label {
+      margin-left: 5px;
+    }
+  }
+}
+
+.Test {
+  display: flex;
+  align-items: center;
+  p {
+    padding: 1rem;
+  }
+  hr {
+    height: 1px;
+    width: 100%;
+  }
+}
+
+.Form__Header {
+  text-align: center;
+  h5 {
+    font-weight: normal;
+    letter-spacing: 0.65px;
+  }
+}
+
+.List {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  li {
+    font-weight: 500;
+    color: orange;
+    font-size: 0.85rem;
+    margin: 7px 0;
+    .Icon {
+      margin-right: 5px;
+    }
+  }
+}

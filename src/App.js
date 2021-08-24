@@ -7,6 +7,7 @@ import "./global.scss";
 import Homepage from "./pages/Homepage/Homepage";
 import { Route, Switch } from "react-router-dom";
 import Store from "./store/Store";
+import AccountPage from "./pages/AccountPage/AccountPage";
 function App() {
   return (
     <Fragment>
@@ -20,6 +21,7 @@ function App() {
             path={["/store/:category/:subcategory", "/store"]}
             component={Store}
           />
+          <Route exact path="/account" component={AccountPage} />
         </Switch>
       </PageContainer>
 
