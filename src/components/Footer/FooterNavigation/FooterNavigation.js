@@ -1,52 +1,51 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import classes from "./Navigation.module.scss"
+import classes from "./Navigation.module.scss";
+
+const LEGAL_LINKS = [
+  { label: "Terms and Conditions" },
+  { label: "Privacy Policy" },
+  { label: "Cookie Policy" },
+  { label: "Site Map" },
+];
+
+const ADVICE_INFORMATION_LINKS = [
+  { label: "Shipping and Delivery" },
+  { label: "Buying Guides" },
+  { label: "Competitions" },
+  { label: "Blog" },
+];
+
+const CUSTOMER_SERVICE_LINKS = [{ label: "Help" }, { label: "Returns" }];
 
 const FooterNavigation = () => {
   return (
     <div className={classes.Footer__Navigation}>
       <ul>
         <h5 className={classes.NavList__Title}>Legal Information</h5>
-        <li>
-          <Link>Terms and Conditions</Link>
-        </li>
-        <li>
-          <Link>Privacy Policy</Link>
-        </li>
-        <li>
-          <Link>Cookie Policy</Link>
-        </li>
-        <li>
-          <Link>Site Map</Link>
-        </li>
+        {LEGAL_LINKS.map((link) => (
+          <li>
+            <Link>{link.label}</Link>
+          </li>
+        ))}
       </ul>
       <ul>
         <h5 className={classes.NavList__Title}>Advice and information</h5>
-
-        <li>
-          <Link>Shipping and Delivery</Link>
-        </li>
-        <li>
-          <Link>Buying Guides</Link>
-        </li>
-        <li>
-          <Link>Competitions</Link>
-        </li>
-        <li>
-          <Link>Blog</Link>
-        </li>
+        {ADVICE_INFORMATION_LINKS.map((link) => (
+          <li>
+            <Link>{link.label}</Link>
+          </li>
+        ))}
       </ul>
       <ul>
         <h5 className={classes.NavList__Title}>Customer Services</h5>
-
-        <li>
-          <Link>Help</Link>
-        </li>
-        <li>
-          <Link>Returns</Link>
-        </li>
+        {CUSTOMER_SERVICE_LINKS.map((link) => (
+          <li>
+            <Link>{link.label}</Link>
+          </li>
+        ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 export default FooterNavigation;
