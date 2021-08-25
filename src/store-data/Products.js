@@ -3,12 +3,13 @@ const PRODUCTS = [
     id: "p1",
     category: "clubs",
     imageUrl:
-      "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
+      "https://images.squarespace-cdn.com/content/v1/530e7c46e4b0f7e807d6f041/1587567338869-M9GE4FJU4IO7Q8029QGD/drivers-2020-mavrik-std____1.png?format=750w",
+
     type: "drivers",
-    brand: "Taylor made",
-    title: "Taylor Made Driver",
+    brand: "Mavrik",
+    title: "Mavrik Driver",
     price: 399.99,
-    description: "a taylor made driver",
+    description: "Mavrik driver",
     newPrice: 349.99,
     saleItem: true,
   },
@@ -16,7 +17,8 @@ const PRODUCTS = [
     id: "p2",
     category: "clubs",
     imageUrl:
-      "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
+      "https://images.squarespace-cdn.com/content/v1/530e7c46e4b0f7e807d6f041/1587567338869-M9GE4FJU4IO7Q8029QGD/drivers-2020-mavrik-std____1.png?format=750w",
+
     type: "drivers",
     brand: "Wilson Staff",
 
@@ -32,12 +34,12 @@ const PRODUCTS = [
     imageUrl:
       "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
     type: "irons",
-    brand: "Cobra",
+    brand: "Titleist",
 
-    title: "Taylor Made Iron",
+    title: "Titleist Iron",
     price: 89.99,
     newPrice: 45.0,
-    description: "a taylor made iron",
+    description: "Titleist iron",
     saleItem: true,
   },
   {
@@ -45,27 +47,27 @@ const PRODUCTS = [
 
     category: "clubs",
     imageUrl:
-      "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
-    type: "irons",
-    brand: "Taylor made",
+      "https://images.directgolf.co.uk/images/products/87102690_3pl.jpg",
 
-    title: "Taylor Made Iron",
+    type: "irons",
+    brand: "Wilson",
+
+    title: "Wilson 7 Iron",
     price: 59.99,
-    description: "a taylor made iron",
+    description: "A Wilson 7 iron",
     saleItem: false,
   },
   {
     id: "p5",
 
     category: "clubs",
-    imageUrl:
-      "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
+    imageUrl: `https://www.scottsdalegolf.co.uk/uploads/medium/ping-heppler-anser2-putter-1.jpg`,
     type: "putters",
-    brand: "Slazenger",
+    brand: "Ping",
 
-    title: "Taylor Made Putter",
+    title: "Ping Putter",
     price: 759.99,
-    description: "a taylor made Putter",
+    description: "A Ping Putter",
     saleItem: false,
   },
   {
@@ -80,6 +82,21 @@ const PRODUCTS = [
     price: 359.99,
     newPrice: 300.0,
     description: "a Callaway made Wood",
+    saleItem: true,
+  },
+  {
+    id: "p7",
+
+    category: "balls",
+    brand: "Slazenger",
+    imageUrl:
+      "https://images.directgolf.co.uk/images/products/87505801_3pl.jpg",
+
+    type: "distance-balls",
+    title: "12 Slazenger Distance balls",
+    price: 30.99,
+    newPrice: 25.99,
+    description: "12 Balls",
     saleItem: true,
   },
 ];

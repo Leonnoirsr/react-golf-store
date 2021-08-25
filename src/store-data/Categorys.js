@@ -273,11 +273,7 @@ const CATEGORYS = [
         imageUrl:
           "https://images.directgolf.co.uk/images/products/87102690_3pl.jpg",
       },
-      {
-        label: "Golf Balls",
-        imageUrl:
-          "https://images.directgolf.co.uk/images/products/87505801_3pl.jpg",
-      },
+
       {
         label: "Bags",
         imageUrl:
