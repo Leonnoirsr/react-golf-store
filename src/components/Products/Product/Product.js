@@ -12,7 +12,7 @@ const Product = ({ product }) => {
         price={product.price}
         description={product.description}
       />
-      <ProductActions />
+      <ProductActions product={product} />
       {product.saleItem && <p className={classes.Sale__Item}>Sale!</p>}
     </div>
   );

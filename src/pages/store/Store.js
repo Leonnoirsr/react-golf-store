@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Store.module.scss";
-import product_data from "../store-data/Products";
-import Products from "../components/Products/Products";
+import product_data from "../../store-data/Products";
+import Products from "../../components/Products/Products";
 import { useParams } from "react-router";
 
 const Store = (props) => {

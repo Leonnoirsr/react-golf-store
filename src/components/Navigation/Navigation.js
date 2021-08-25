@@ -9,11 +9,18 @@ import NavigationItems from "./NavigationItems/NavigationItems";
 import TopBar from "./TopBar/TopBar";
 import ToggleButton from "./MobileNavigation/ToggleButton";
 import MobileNavigationItems from "./MobileNavigation/MobileNavigationItems/MobileNavigationItems";
+import { useDispatch, useSelector } from "react-redux";
+import { cartActions } from "../../ReduxStore/cart-slice";
 const Navigation = (props) => {
+  const dispatch = useDispatch();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  const cartItems = useSelector((state) => state.cart.cartItems);
   const toggleMobileNavOpenHandler = () => {
     setMobileNavOpen((prevState) => !prevState);
+  };
+  const toggleCart = () => {
+    dispatch(cartActions.toggleViewingCart());
   };
 
   return (
@@ -25,9 +32,12 @@ const Navigation = (props) => {
           <Link to="/">
             <Logo />
           </Link>
-          <div className={classes.Basket}>
+          <div onClick={toggleCart} className={classes.Basket}>
             <FontAwesomeIcon className={classes.Icon} icon={faShoppingBasket} />
-            <p>Basket (0)</p>
+            <p>
+              {" "}
+              <span className={classes.CartAmount}>{cartItems.length}</span>
+            </p>
           </div>
         </div>
         <MobileNavigationItems

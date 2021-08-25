@@ -7,7 +7,7 @@ const PRODUCTS = [
     type: "drivers",
     brand: "Taylor made",
     title: "Taylor Made Driver",
-    price: 159.99,
+    price: 399.99,
     description: "a taylor made driver",
     saleItem: true,
   },
@@ -34,7 +34,7 @@ const PRODUCTS = [
     brand: "Cobra",
 
     title: "Taylor Made Iron",
-    price: 159.99,
+    price: 89.99,
 
     description: "a taylor made iron",
     saleItem: true,
@@ -49,7 +49,7 @@ const PRODUCTS = [
     brand: "Taylor made",
 
     title: "Taylor Made Iron",
-    price: 159.99,
+    price: 59.99,
     description: "a taylor made iron",
     saleItem: false,
   },
@@ -63,7 +63,7 @@ const PRODUCTS = [
     brand: "Slazenger",
 
     title: "Taylor Made Putter",
-    price: 159.99,
+    price: 759.99,
     description: "a taylor made Putter",
     saleItem: false,
   },
@@ -76,7 +76,7 @@ const PRODUCTS = [
       "https://www.americangolf.co.uk/dw/image/v2/AAKY_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7f8da521/images-square/zoom/350886-Titleist-T300-Steel-Irons-1.jpg?sw=255",
     type: "fairway-woods",
     title: "Callaway Made Wood",
-    price: 159.99,
+    price: 359.99,
     description: "a Callaway made Wood",
     saleItem: true,
   },

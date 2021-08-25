@@ -10,8 +10,23 @@
       padding: 0.5rem;
     }
     .Basket {
+      width: fit-content;
       display: flex;
+      padding: 0.3rem;
+      border-radius: 18px;
+
       align-items: center;
+      &:hover {
+        cursor: pointer;
+        background: orange;
+        .Icon {
+          color: white;
+        }
+        span {
+          color: #ccc;
+          background: whitesmoke;
+        }
+      }
       p {
         font-size: 0.8rem;
         color: #ccc;
@@ -24,4 +39,16 @@
       }
     }
   }
+}
+
+.CartAmount {
+  display: block;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: orange;
+  color: white;
 }

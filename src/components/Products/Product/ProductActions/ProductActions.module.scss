@@ -7,6 +7,9 @@
     box-shadow: 0px 2px 2px 1px #ccc;
     font-family: inherit;
     border: none;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

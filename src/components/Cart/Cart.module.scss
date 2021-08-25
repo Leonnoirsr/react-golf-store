@@ -1,0 +1,11 @@
+.Cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 200;
+  width: 348px;
+  background: white;
+  overflow: auto;
+  padding: 1rem;
+}
