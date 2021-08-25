@@ -11,6 +11,7 @@ const Product = ({ product }) => {
         title={product.title}
         price={product.price}
         description={product.description}
+        newPrice={product.newPrice && product.newPrice}
       />
       <ProductActions product={product} />
       {product.saleItem && <p className={classes.Sale__Item}>Sale!</p>}

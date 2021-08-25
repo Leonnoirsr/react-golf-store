@@ -35,7 +35,6 @@ const Navigation = (props) => {
           <div onClick={toggleCart} className={classes.Basket}>
             <FontAwesomeIcon className={classes.Icon} icon={faShoppingBasket} />
             <p>
-              {" "}
               <span className={classes.CartAmount}>{cartItems.length}</span>
             </p>
           </div>

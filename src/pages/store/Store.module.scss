@@ -9,15 +9,15 @@
 
 .Filters {
   width: 100%;
+  position: relative;
   max-width: 1092px;
+  padding: 0.5rem;
   display: flex;
-  background: whitesmoke;
+  border-bottom: 1px solid #ccc;
   .Filter__List {
     padding: 1rem;
     width: fit-content;
-    background: white;
-    max-height: 170px;
-    border: 1px solid #ccc;
+    max-height: 140px;
     overflow: auto;
 
     h4 {
@@ -33,4 +33,15 @@
       }
     }
   }
+}
+
+.ResetButton {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+  font-family: inherit;
+  padding: 0.5rem;
+  border: none;
+  background: orange;
+  color: white;
 }

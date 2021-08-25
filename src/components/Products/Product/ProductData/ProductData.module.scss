@@ -9,3 +9,25 @@
     text-transform: capitalize;
   }
 }
+
+.Price {
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 5px;
+  }
+  .OldPrice {
+    color: red;
+    text-decoration: line-through;
+  }
+  .NewPrice {
+    font-weight: bold;
+    color: green;
+  }
+}
+
+.Savings {
+  font-size: 0.7rem !important;
+  width: fit-content;
+  margin: 0 auto;
+}

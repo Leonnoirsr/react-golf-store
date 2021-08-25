@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../../ReduxStore/cart-slice";
 import classes from "./ProductActions.module.scss";
+import Button from "../../../global/Button/Button";
 const ProductActions = ({ product }) => {
   const dispatch = useDispatch();
 
@@ -10,10 +11,13 @@ const ProductActions = ({ product }) => {
   };
   return (
     <div className={classes.Actions}>
-      <button onClick={addToCartHandler} className={classes.AddToCartButton}>
+      <Button
+        onClick={addToCartHandler}
+        className={`${classes.AddToCartButton}`}
+      >
         Add to Cart
-      </button>
-      <button className={classes.DetailButton}>Details</button>
+      </Button>
+      <Button className={classes.DetailButton}>Details</Button>
     </div>
   );
 };

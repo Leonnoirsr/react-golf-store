@@ -7,7 +7,10 @@ const Cart = (props) => {
   const viewingCart = useSelector((state) => state.cart.viewingCart);
   const cartItems = useSelector((state) => state.cart.cartItems);
   return (
-    <div className={classes.Cart}>
+    <div
+      style={{ transform: props.show ? "translateX(0)" : "translateX(100%)" }}
+      className={classes.Cart}
+    >
       {cartItems.length === 0 && <p>No items in your cart!</p>}
       {cartItems.length > 0 &&
         cartItems.map((cartI) => <CartItem cartItem={cartI} />)}

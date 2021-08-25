@@ -9,6 +9,7 @@ const PRODUCTS = [
     title: "Taylor Made Driver",
     price: 399.99,
     description: "a taylor made driver",
+    newPrice: 349.99,
     saleItem: true,
   },
   {
@@ -35,7 +36,7 @@ const PRODUCTS = [
 
     title: "Taylor Made Iron",
     price: 89.99,
-
+    newPrice: 45.0,
     description: "a taylor made iron",
     saleItem: true,
   },
@@ -77,6 +78,7 @@ const PRODUCTS = [
     type: "fairway-woods",
     title: "Callaway Made Wood",
     price: 359.99,
+    newPrice: 300.0,
     description: "a Callaway made Wood",
     saleItem: true,
   },

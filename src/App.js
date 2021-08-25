@@ -17,7 +17,7 @@ function App() {
       <Navigation />
       <BannerBar>Free UK Delivery on Orders over £30</BannerBar>
 
-      {viewingCart && <Cart />}
+      <Cart show={viewingCart} />
       <PageContainer>
         <Switch>
           <Route exact path="/" component={Homepage} />
