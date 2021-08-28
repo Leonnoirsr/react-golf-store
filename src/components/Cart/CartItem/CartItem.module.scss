@@ -1,20 +1,85 @@
 .CartItem {
-  padding: 0.3rem;
-  margin: 5px 0;
-  font-size: 0.8rem;
-  display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  img {
-    width: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0.2rem;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.CartItem__Image {
+  width: 100px;
+  vertical-align: middle;
+}
+
+.QuantityInput {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  .QuantityButton {
+    background: orange;
+    color: white;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .QuantityAmount {
+    width: 18px;
+    font-size: 0.7rem;
+    height: 22px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.Quantity {
-  padding: 0.3rem;
+.RemoveFromCartButton {
+  width: 20px;
+  height: 20px;
   display: flex;
-  p {
-    margin-right: 2px;
+  align-items: center;
+  background-color: orange;
+  justify-content: center;
+  color: white;
+  background: ora;
+  top: 0;
+  right: 0;
+  position: absolute;
+  &:hover {
+    cursor: pointer;
+    background: red;
   }
+}
+
+.CartItem__Title {
+  font-size: 0.8rem;
+}
+.CartItem__Price {
+  font-size: 0.8rem;
+}
+.CartItem__SalePrice {
+  font-size: 0.8rem;
+}
+.RowTotal__Price {
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.Savings {
+  bottom: 0;
+  text-align: center;
+  font-size: 0.6rem;
+  align-items: center;
+  background: orange;
+  color: white;
+  left: 0;
+  padding: 0.2rem;
 }

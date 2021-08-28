@@ -1,18 +1,15 @@
 import React from "react";
 import classes from "./CartItem.module.scss";
+import CartItemImage from "./CartItemImage/CartItemImage";
+import CartItemQty from "./CartItemQty/CartItemQty";
+import CartItemRowTotal from "./CartItemRowTotal/CartItemRowTotal";
 
 const CartItem = ({ cartItem }) => {
-  const totalPrice = cartItem.price * cartItem.quantity;
   return (
     <div className={classes.CartItem}>
-      <img src={cartItem.imageUrl}></img>
-      <h4 className={classes.CartItem__Title}>{cartItem.title}</h4>
-      <div className={classes.Quantity}>
-        <p>Qty: {cartItem.quantity}</p>
-        <p>x</p>
-        <p>£{cartItem.price}</p>
-      </div>
-      <p>£{totalPrice.toFixed(2)}</p>
+      <CartItemImage cartItem={cartItem} />
+      <CartItemQty cartItem={cartItem} />
+      <CartItemRowTotal cartItem={cartItem} />
     </div>
   );
 };

@@ -24,24 +24,24 @@ const FooterNavigation = () => {
       <ul>
         <h5 className={classes.NavList__Title}>Legal Information</h5>
         {LEGAL_LINKS.map((link) => (
-          <li>
-            <Link>{link.label}</Link>
+          <li key={link.label}>
+            <Link to="/">{link.label}</Link>
           </li>
         ))}
       </ul>
       <ul>
         <h5 className={classes.NavList__Title}>Advice and information</h5>
         {ADVICE_INFORMATION_LINKS.map((link) => (
-          <li>
-            <Link>{link.label}</Link>
+          <li key={link.label}>
+            <Link to="/">{link.label}</Link>
           </li>
         ))}
       </ul>
       <ul>
         <h5 className={classes.NavList__Title}>Customer Services</h5>
         {CUSTOMER_SERVICE_LINKS.map((link) => (
-          <li>
-            <Link>{link.label}</Link>
+          <li key={link.label}>
+            <Link to="/">{link.label}</Link>
           </li>
         ))}
       </ul>

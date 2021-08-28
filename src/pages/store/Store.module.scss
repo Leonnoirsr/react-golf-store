@@ -7,34 +7,6 @@
   justify-content: center;
 }
 
-.Filters {
-  width: 100%;
-  position: relative;
-  max-width: 1092px;
-  padding: 0.5rem;
-  display: flex;
-  border-bottom: 1px solid #ccc;
-  .Filter__List {
-    padding: 1rem;
-    width: fit-content;
-    max-height: 140px;
-    overflow: auto;
-
-    h4 {
-    }
-    .Checkbox {
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      label {
-        margin-left: 5px;
-        text-transform: capitalize;
-      }
-    }
-  }
-}
-
 .ResetButton {
   position: absolute;
   bottom: 0.5rem;

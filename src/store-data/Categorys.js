@@ -280,7 +280,7 @@ const CATEGORYS = [
           "https://images.directgolf.co.uk/images/products/87301644_l.jpg",
       },
       {
-        label: "Woods",
+        label: "Fairway-Woods",
         imageUrl:
           "https://images.directgolf.co.uk/images/products/87207590_3pl.jpg",
       },

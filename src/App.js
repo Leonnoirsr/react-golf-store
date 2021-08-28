@@ -9,15 +9,22 @@ import { Route, Switch } from "react-router-dom";
 import Store from "./pages/store/Store";
 import AccountPage from "./pages/AccountPage/AccountPage";
 import Cart from "./components/Cart/Cart";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import Backdrop from "./components/global/Backdrop/Backdrop";
+import { cartActions } from "./ReduxStore/cart-slice";
 function App() {
+  const dispatch = useDispatch();
+
   const viewingCart = useSelector((state) => state.cart.viewingCart);
+  const toggleViewingCart = () => {
+    dispatch(cartActions.toggleViewingCart());
+  };
   return (
     <Fragment>
       <Navigation />
       <BannerBar>Free UK Delivery on Orders over £30</BannerBar>
-
-      <Cart show={viewingCart} />
+      {viewingCart && <Backdrop toggleViewingCart={toggleViewingCart} />}
+      <Cart toggleViewingCart={toggleViewingCart} show={viewingCart} />
       <PageContainer>
         <Switch>
           <Route exact path="/" component={Homepage} />
